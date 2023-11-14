@@ -10,7 +10,7 @@ teste: caractere
 
 inicio
 
-teste <- "Este é um teste."
+teste <- "1Este é um teste."
 escreval ("Variável Teste")
 escreva ("O valor da variável TESTE é: " + teste)
 
