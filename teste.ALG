@@ -1,17 +1,23 @@
-algoritmo "Nome do Programa"
-// Disciplina  :  [Linguagem e Lógica de Programação]
-// Professor   : [Nome do Professor]
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL
-var
+algoritmo "Calculadora Inteligente de Uma Equação do 2 Grau"
+Neste programa iremos resolver uma equação do 2 grau. 
 
-teste: caractere
+var Delta <= b^2-4.a.c : inteiro
 
 inicio
+escreva: ("resolver essa equaçao do 2 grau")
+leia: (" Delta <= b^2-4.a.c")
+se: ( a = 0) entao
+escreval: ("E uma funçao do 2 grau")
+ 
+senao
 
-teste <- "1Este é um teste."
-escreval ("Variável Teste")
-escreva ("O valor da variável TESTE é: " + teste)
+se: 
+
+
+
 
 fimalgoritmo
+
+
+
+
