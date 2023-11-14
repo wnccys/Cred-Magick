@@ -1,4 +1,4 @@
-algoritmo "Saldo m�dio"
+algoritmo "Saldo médio"
 
 var
 saldoM:real
@@ -30,7 +30,7 @@ inicio
   limpatela
   
    enquanto (saldoM < 0) faca
-    escreval("O saldo n�'o pode ser negativo. Digite novamente:")
+    escreval("O saldo não pode ser negativo. Digite novamente:")
     leia(saldoM)
   fimenquanto
   limpatela
@@ -50,8 +50,8 @@ inicio
     fimse
   fimse
 
-  Escreval("Seu saldo � de: R$", saldoM)
-  Escreval("Sua nova op��o de cr�dito ser� de: R$", saldoF)
+  Escreval("Seu saldo é de: R$", saldoM)
+  Escreval("Sua nova opção de crédito será de: R$", saldoF)
   
 
 fimalgoritmo
