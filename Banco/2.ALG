@@ -27,13 +27,20 @@ inicio
 
   Escreva("Digite o Saldo médio do Cliente:")
   leia(saldoM)
-  limpatela
+  escreval("")
+  escreval("")
+  
+
   
    enquanto (saldoM < 0) faca
     escreval("O saldo não pode ser negativo. Digite novamente:")
     leia(saldoM)
   fimenquanto
-  limpatela
+  
+
+
+
+
   
 
   Se(saldoM > 400) entao

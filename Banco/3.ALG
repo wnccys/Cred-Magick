@@ -18,7 +18,7 @@ escreval ("")
 quantidade_convite <- int(custo_espetaculo/preco_convite)
 
 escreval ("")
-Escreva ("A quantidadde mínima de convites que precisam ser vendidos para que o custo do espetáculo seja alcançado é: ", quantidade_convite)  
+Escreva ("A quantidade mínima de convites que precisam ser vendidos para que o custo do espetáculo seja alcançado é: ", quantidade_convite)  
 escreval ("")
 
 fimalgoritmo
