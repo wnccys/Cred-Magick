@@ -28,7 +28,7 @@ inicio
   Escreva("Digite o Saldo médio do Cliente:")
   leia(saldoM)
   escreval("")
-  escreval("")
+ 
   
 
   
