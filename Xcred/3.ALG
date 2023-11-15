@@ -1,8 +1,4 @@
 algoritmo "Nome do Programa"
-// Disciplina  :  [Linguagem e Lógica de Programação]
-// Professor   : [Nome do Professor]
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
 var
 custo_espetaculo, preco_convite: real 
 quantidade_convite: inteiro 
