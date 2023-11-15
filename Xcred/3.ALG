@@ -1,4 +1,4 @@
-algoritmo "Nome do Programa"
+algoritmo "3"
 var
 custo_espetaculo, preco_convite: real 
 quantidade_convite: inteiro 
