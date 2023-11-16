@@ -1,66 +1,45 @@
-algoritmo "Saldo médio"
-// resolve a atividade 2 da lista;
-var
-saldoM:real
-saldoF:real
+algoritmo "Valor Deposito"
 
+
+var
+  deposito:real
+  juros:real
 inicio
 
-escreva ("
-     ■■■■                  ■■■■                                                                                         
-       ■■■■              ■■■■■■■■■                                                ■■■■■                                 
-        ■■■■           ■■■      ■■■                                               ■■■                                   
-          ■■■         ■■■        ■■■■                                             ■■■                                   
-           ■■■      ■■■            ■■■                                            ■■■                                   
-             ■■■   ■■■              ■■                                            ■■■                                   
-              ■■■■■■■■              ■■                                            ■■■■                                  
-               ■■■■■■               ■■                                          ■■■■■                                   
-                ■■■■                                       ■■■■■          ■■■■■■■■■■■                                   
-                 ■■■                   ■■■■   ■■■■■      ■■■   ■■■■     ■■■■■■   ■■■■                                   
-               ■■■■■■               ■■    ■■■■  ■■■■■   ■■■■■■■■■■■■   ■■■■        ■                                    
-             ■■■■■■■■               ■■     ■■      ■■   ■■             ■■■         ■■                                   
-           ■■■■    ■■■              ■■      ■            ■             ■■          ■■                                   
-         ■■■■       ■■■            ■■■      ■■          ■■■             ■          ■■                                   
-       ■■■■■         ■■■■■       ■■■■        ■           ■■■■■   ■■■■   ■■         ■■                                   
-      ■■■■               ■■■■■■■■■           ■■             ■■■■■■■     ■■■■■■   ■■■■■■■                                
-    ■■■■                   ■■■■               ■               ■■■         ■■■■■■■■■■■■■                                 
-")
-
-  Escreva("Digite o Saldo médio do Cliente:")
-  leia(saldoM)
+  escreval("Digite o valor desejado para depósito:")
+  leia(deposito)
   escreval("")
+  escreval(".")
   escreval("")
+  escreval("Digite o valor da taxa de juros:")
+  escreval("")
+  escreval(".")
+  escreval("")
+  leia(juros)
   
-
   
-   enquanto (saldoM < 0) faca
-    escreval("O saldo não pode ser negativo. Digite novamente:")
-    leia(saldoM)
+  enquanto (deposito < 0) faca
+    escreval("O deposito não pode ser negativo. Digite novamente:")
+    leia(deposito)
+    escreva("")
   fimenquanto
   
-
-
-
-
+  enquanto (juros < 0) faca
+    escreval("A taxa de juros não pode ser negativa. Digite novamente:")
+     escreva("")
+    leia(juros)
+  fimenquanto
   
+  escreva("O rendimento diário é de: " + (juros*deposito))
+  escreva("")
 
-  Se(saldoM > 400) entao
-    saldoF <- saldoM*0.30
-  Senao
-    Se(saldoM >= 300) e (saldoM <= 400) entao
-      saldoF <- saldoM*0.25
-    Senao
-      Se(saldoM >= 200) e (saldoM < 300) entao
-        saldoF <- saldoM*0.20
-      Senao
-        saldoF <- saldoM*0.10
-      fimse
-    fimse
-  fimse
-
-  Escreval("Seu saldo é de: R$", saldoM)
-  Escreval("Sua nova opção de crédito será de: R$", saldoF)
+  escreval("O valor total depois do rendimento diário é de: " + ((juros*deposito)+deposito))
+  escreva("")
   
+  escreva("O rendimento mensal é de: "+ ((juros*deposito)*30))
+  escreva("")
 
+  escreval("O valor total depois do rendimento mensal é de: "+ ((juros*deposito)*30)+deposito)
+  escreval("O rendimento anual é de: " (juros*deposito)*365)
+  escreval("O valor total depois do rendimento anual é de: "+((juros*deposito)*365)+deposito)
 fimalgoritmo
-
