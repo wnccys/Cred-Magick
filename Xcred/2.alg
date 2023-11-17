@@ -1,6 +1,5 @@
 algoritmo "Valor Deposito"
-
-
+// calcula rendimento de acordo com certo depósito;
 var
   deposito:real
   juros:real
@@ -21,12 +20,12 @@ inicio
   enquanto (deposito < 0) faca
     escreval("O deposito não pode ser negativo. Digite novamente:")
     leia(deposito)
-    escreva("")
+    escreval("")
   fimenquanto
   
   enquanto (juros < 0) faca
     escreval("A taxa de juros não pode ser negativa. Digite novamente:")
-     escreva("")
+     escreval("")
     leia(juros)
   fimenquanto
   
@@ -34,10 +33,10 @@ inicio
   escreva("")
 
   escreval("O valor total depois do rendimento diário é de: " + ((juros*deposito)+deposito))
-  escreva("")
+  escreval("")
   
-  escreva("O rendimento mensal é de: "+ ((juros*deposito)*30))
-  escreva("")
+  escreval("O rendimento mensal é de: "+ ((juros*deposito)*30))
+  escreval("")
 
   escreval("O valor total depois do rendimento mensal é de: "+ ((juros*deposito)*30)+deposito)
   escreval("O rendimento anual é de: " (juros*deposito)*365)
