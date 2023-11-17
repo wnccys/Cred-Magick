@@ -6,6 +6,7 @@ quantidade_convite: inteiro
 
 inicio
 escreval ("")
+escreval ("Digite o preço total do espetáculo: ")
 escreval ("--------------------------------------")
 escreval ("O L A !  S E J A  B E M  V I N D O (A)")
 escreval ("--------------------------------------")
