@@ -38,15 +38,15 @@ repita
 
       se (Nvsalario1 >= 0)  e (Nvsalario1<= 350) entao
          Nvsalario1 <- (Nvsalario1 * 0.15) + (Nvsalario1)
-         escreval("O novo salário com aumento desse funcionário é de: ", Nvsalario1, "R$")
+         escreval("O novo salário com aumento desse funcionário é de:  R$", Nvsalario1:2:2)
       senao
           se (Nvsalario1 > 350) e (Nvsalario1<=600) entao
             Nvsalario1 <- (Nvsalario1 * 0.10) + (Nvsalario1)
-            escreval("O novo salário com aumento desse funcionário é de: ", Nvsalario1, "R$")
+            escreval("O novo salário com aumento desse funcionário é de:  R$", Nvsalario1:2:2)
          senao
            se (Nvsalario1>600) entao
                Nvsalario1 <- (Nvsalario1 * 0.05) + (Nvsalario1)
-               escreval("O novo salário com aumento desse funcionário é de: ", Nvsalario1, "R$")
+               escreval("O novo salário com aumento desse funcionário é de:  R$", Nvsalario1:2:2)
             senao
                escreval("Opção inválida tente novamente.")
             fimse
@@ -64,7 +64,7 @@ repita
           
          se (Nvsalario2>0) entao
             ferias <- (Nvsalario2) + (Nvsalario2)/3
-            escreval("O valor das férias do funcionário é de: " , ferias, "R$")
+            escreval("O valor das férias do funcionário é de:  R$", ferias:2:2 )
              escreval(" ")
          senao escreval("opção inválida ferias")
          fimse
@@ -78,7 +78,7 @@ repita
           leia(tempof)
          Nvsalario3 <- Nvsalario3 * (tempof/12)
       se(Nvsalario3 >0) entao
-       escreval("O Décimo terceiro será de: ", Nvsalario3, "R$")
+       escreval("O Décimo terceiro será de:  R$", Nvsalario3:2:2)
         senao
          escreval(" ")
        fimse
