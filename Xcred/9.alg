@@ -1,7 +1,7 @@
 algoritmo "Menu"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Henrique
-// Descrição   :Um programa que permite o usuário escolher a 
+// Descrição   :Um programa que permite o usuário escolher a escolher a opção desejada, receber os dados necessários para executar a operação e mostrar o resultado.
 // Data atual  : 16/11/2023
 
 var
