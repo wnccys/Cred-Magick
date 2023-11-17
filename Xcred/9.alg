@@ -15,18 +15,23 @@ var
 inicio
 repita
       escreval("-------- Menu --------")
+      escreval("")
       escreval("1 - Novo Salário")
       escreval("2 - Férias")
       escreval("3 - Décimo terceiro")
       escreval("0 - Sair")
+      escreval("")
       escreval("-----------------------")
+      escreval("")
       escreval("Escolha uma opção: ")
+      escreval("")
 
 
       leia(opcao)
       escolha opcao
       caso 1
          escreval("Você escolheu Novo Salário")
+         escreval(" ")
          escreval("Digite o valor do atual salário do funcionário desejado: ")
          
          leia(Nvsalario1)
@@ -39,11 +44,11 @@ repita
             Nvsalario1 <- (Nvsalario1 * 0.10) + (Nvsalario1)
             escreval("O novo salário com aumento desse funcionário é de: ", Nvsalario1, "R$")
          senao
-           se (Nvsalario1<600) entao
-               Nvsalario1 <- (Nvsalario1 * 0.5) + (Nvsalario1)
+           se (Nvsalario1>600) entao
+               Nvsalario1 <- (Nvsalario1 * 0.05) + (Nvsalario1)
                escreval("O novo salário com aumento desse funcionário é de: ", Nvsalario1, "R$")
             senao
-               escreva("Opção inválida parte 1 tente novamente.")
+               escreval("Opção inválida tente novamente.")
             fimse
          fimse
       fimse
@@ -52,6 +57,7 @@ repita
          
       caso 2
          escreval("Você escolheu Férias")
+          escreval(" ")
          escreval("Digite o valor do atual salário do funcionário desejado: ")
          
           leia(Nvsalario2)
@@ -59,11 +65,13 @@ repita
          se (Nvsalario2>0) entao
             ferias <- (Nvsalario2) + (Nvsalario2)/3
             escreval("O valor das férias do funcionário é de: " , ferias, "R$")
+             escreval(" ")
          senao escreval("opção inválida ferias")
          fimse
          
       caso 3
          escreval("Você escolheu a Opção 3")
+          escreval(" ")
       escreval("Qual o salário atual do funcionário? :")
           leia(Nvsalario3)
           escreval("Qual a quantidade de meses trabalhados? :")
@@ -72,11 +80,11 @@ repita
       se(Nvsalario3 >0) entao
        escreval("O Décimo terceiro será de: ", Nvsalario3, "R$")
         senao
-         escreval(".")
+         escreval(" ")
        fimse
 
       outrocaso
-      escreva(".")
+      escreval(" ")
       fimescolha
       opcao = 0
    ate opcao = 0
