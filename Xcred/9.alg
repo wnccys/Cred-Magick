@@ -64,7 +64,7 @@ repita
           
          se (Nvsalario2>0) entao
             ferias <- (Nvsalario2) + (Nvsalario2)/3
-            escreval("O valor das férias do funcionário é de:  R$", ferias:2:2 )
+            escreval("O valor das férias do funcionário é de:  R$", ferias:2:2)
              escreval(" ")
          senao escreval("opção inválida ferias")
          fimse
@@ -72,9 +72,9 @@ repita
       caso 3
          escreval("Você escolheu a Opção 3")
           escreval(" ")
-      escreval("Qual o salário atual do funcionário? :")
+      escreval("Digite o valor do atual salário do funcionário desejado: ")
           leia(Nvsalario3)
-          escreval("Qual a quantidade de meses trabalhados? :")
+          escreval("Digite a quantidade de meses trabalhados: ")
           leia(tempof)
          Nvsalario3 <- Nvsalario3 * (tempof/12)
       se(Nvsalario3 >0) entao
