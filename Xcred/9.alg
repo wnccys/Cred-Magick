@@ -13,7 +13,7 @@ var
    tempof:real
 
 inicio
-   repita
+repita
       escreval("-------- Menu --------")
       escreval("1 - Novo Salário")
       escreval("2 - Férias")
@@ -21,21 +21,20 @@ inicio
       escreval("0 - Sair")
       escreval("-----------------------")
       escreval("Escolha uma opção: ")
-      leia(opcao) 
 
-       opcao = 1 entao
-         escreval("Você escolheu Novo Salário") 
+
+      leia(opcao)
+      escolha opcao
+      caso 1
+         escreval("Você escolheu Novo Salário")
          escreval("Digite o valor do atual salário do funcionário desejado: ")
-         leia(Nvsalario1)
-      senao 
-         escreval("Opção inválida parte inicial tente novamente.")
-      fimse
          
-      
+         leia(Nvsalario1)
+
       se (Nvsalario1 >= 0)  e (Nvsalario1<= 350) entao
          Nvsalario1 <- (Nvsalario1 * 0.15) + (Nvsalario1)
-         escreval("O novo salário com aumento desse funcionário é de: ", Nvsalario1, "R$") 
-      senao 
+         escreval("O novo salário com aumento desse funcionário é de: ", Nvsalario1, "R$")
+      senao
           se (Nvsalario1 > 350) e (Nvsalario1<=600) entao
             Nvsalario1 <- (Nvsalario1 * 0.10) + (Nvsalario1)
             escreval("O novo salário com aumento desse funcionário é de: ", Nvsalario1, "R$")
@@ -43,48 +42,43 @@ inicio
            se (Nvsalario1<600) entao
                Nvsalario1 <- (Nvsalario1 * 0.5) + (Nvsalario1)
                escreval("O novo salário com aumento desse funcionário é de: ", Nvsalario1, "R$")
-            senao 
+            senao
                escreva("Opção inválida parte 1 tente novamente.")
-            fimse 
+            fimse
          fimse
       fimse
-               
+         
 
-      escreval(".")
-
-      se opcao = 2 entao
+         
+      caso 2
          escreval("Você escolheu Férias")
          escreval("Digite o valor do atual salário do funcionário desejado: ")
-      senao 
-         escreval("Opção inválida opção 2 tente novamente.")
-         se (Nvsalario2<0) entao
+         
+          leia(Nvsalario2)
+          
+         se (Nvsalario2>0) entao
             ferias <- (Nvsalario2) + (Nvsalario2)/3
-            leia(Nvsalario2)
             escreval("O valor das férias do funcionário é de: " , ferias, "R$")
+         senao escreval("opção inválida ferias")
          fimse
-      fimse
          
-         
-
-      escreval(".")
-   
-      se opcao = 3 entao
+      caso 3
          escreval("Você escolheu a Opção 3")
-         escreval("Qual o tempo de empresa do funcionário? :")
-         leia(tempof)
-         escreval("Qual o salário atual do funcionário? :")
+      escreval("Qual o salário atual do funcionário? :")
+          leia(Nvsalario3)
+          escreval("Qual a quantidade de meses trabalhados? :")
+          leia(tempof)
          Nvsalario3 <- Nvsalario3 * (tempof/12)
-         leia(Nvsalario3)
-         escreva("O Décimo terceiro será de: ", Nvsalario3, "R$")
-      senao 
+      se(Nvsalario3 >0) entao
+       escreval("O Décimo terceiro será de: ", Nvsalario3, "R$")
+        senao
          escreval(".")
-         se opcao = 0 entao
-            escreva("Saindo do programa...")
-         senao 
-            escreva("Opção inválida parte 3 Tente novamente.")
-         fimse
-      fimse
+       fimse
 
-   ate(opcao = 0)
+      outrocaso
+      escreva(".")
+      fimescolha
+      opcao = 0
+   ate opcao = 0
 
 fimalgoritmo

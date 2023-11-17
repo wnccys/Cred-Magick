@@ -1,5 +1,5 @@
 algoritmo "Calculadora Inteligente de Uma Equação do 2 Grau"
-Neste programa iremos resolver uma equação do 2 grau. 
+// Neste programa iremos resolver uma equação do 2 grau.
 
 var Delta <= b^2-4.a.c : inteiro
 
