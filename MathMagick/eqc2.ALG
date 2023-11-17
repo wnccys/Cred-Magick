@@ -5,7 +5,7 @@ var
     a, b, c :inteiro
 
 inicio
-    escreval("Bem-vindo! Este é o MathMagick, Você está usando nosos resolvedor de equações do 2 grau!")
+    escreval("Bem-vindo! Este é o MathMagick, Você está usando nosso resolvedor de equações do 2 grau!")
     escreval("A estrutura da equação é: ax^2+bx+c=0")
     escreval("O valor que a variável A assumirá é:")
     leia(a)
