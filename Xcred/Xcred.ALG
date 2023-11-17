@@ -25,11 +25,12 @@ repita
                           ■■■■               ■■■■■■■■■           ■■             ■■■■■■■     ■■■■      ■■■■■                                
                        ■■■■■                   ■■■■               ■               ■■■         ■■■■■■■■■■■      
 	")
-	escreval("		Esse é o XCred, o banco com as menores taxas do mercado!")
+	escreval("		Esse é o XCred, o banco digital pra gente igual o Ted.")
 	escreval("		Digite seu nome completo para que possamos buscar em nossos bancos!")
 	leia(nome)
-	saldo <- int(rand(1) * randi(40000) * 100)
-	escreval("		Bem-vindo " + nome + "! seu saldo em nosso banco é de: " + saldo + " R$")
+	saldo <- int(rand(1) * randi(40000) * 60)
+	escreval("		Bem-vindo " + nome + "! seu saldo em nosso banco é de: R$ " + saldo + ".")
+
 
   escreval("    Deseja continuar? [S/N]")
   leia(continuar)
