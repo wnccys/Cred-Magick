@@ -1,6 +1,6 @@
 algoritmo "Xcred"
 var
-	saldo :real
+	saldo, deposito, juros :real
   continuar, nome :caractere
   opt :inteiro
 
@@ -52,25 +52,77 @@ repita
     leia(opt)
 
     escolha (opt)
-      caso 1
-        escreval("      Você está para pedir seu Crédito Especial!")
-      caso 2
-        escreval("      Você escolheu investir!")
-      caso 3
-        escreval("      Bem-vindo ao TeaTro quanto deseja doar?")
-      caso 4
-        escreval("      Querendo um aumento anh!")
-      caso 5
-        escreval("      Você decidiu consultar seu saldo!")
-        escreval("      Seu saldo é: ", saldo)
-      caso 6
-        escreval("      Saindo...")
-      outrocaso
-        escreval("      Opção inválida.")
-    fimescolha
-  ate (opt = 5)
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        escreval("                           .")
+        escreval("                          .")
+        caso 1
+            escreval("      Você está para pedir seu Crédito Especial!")
+        caso 2
+            escreval("      Você escolheu investir!")
+            juros <- rand(5)
+            escreval("      Nossa taxa de juros atualmente é: "+juros+"% ao mês.")
+            escreval("      Digite o valor desejado para depósito:")
+            leia(deposito)
+            escreval("")
+            escreval(".")
+            escreval("")
+            escreval(".")
+            escreval("")
+            escreval(".")
+            enquanto (deposito < 0) ou (deposito > saldo) faca
+            escreval("      O deposito não pode ser negativo ou maior que seu saldo. Digite novamente:")
+            leia(deposito)
+            escreval("")
+            fimenquanto
+            
+            escreva("       O rendimento diário é de: " + (juros*deposito))
+            escreva("")
 
-  escreval("    Deseja consultar outra pessoa? [S/N]")
+            escreval("      O valor total depois do rendimento diário é de: " + ((juros*deposito)+deposito))
+            escreval("")
+            
+            escreval("      O rendimento mensal é de: "+ ((juros*deposito)*30))
+            escreval("")
+
+            escreval("      O valor total depois do rendimento mensal é de: "+ ((juros*deposito)*30)+deposito)
+            escreval("      O rendimento anual é de: " (juros*deposito)*365)
+            escreval("      O valor total depois do rendimento anual é de: "+((juros*deposito)*365)+deposito)
+        caso 3
+            escreval("      Bem-vindo ao TeaTro quanto deseja doar?")
+        caso 4
+            escreval("      Querendo um aumento hein! Vamos resolver para você: ")
+        caso 5
+            escreval("      Você decidiu consultar seu saldo!")
+            escreval("      Seu saldo é: ", saldo)
+        caso 6
+            escreval("      Saindo...")
+        outrocaso
+            escreval("      Opção inválida.")
+    fimescolha
+  ate (opt = 6)
+
+  escreval("      Deseja consultar outra pessoa? [S/N]")
   leia(continuar)
 
 ate (continuar = "n") ou (continuar = "N")
