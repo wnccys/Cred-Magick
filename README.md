@@ -11,3 +11,5 @@ pra organizar o projeto preferi pelo Trello, que deixa facilmente compartilharmo
 
 ## Desenvolvimento
 as atividades foram separadas em 2 completas, ou seja, de 9 atividades reduzimos apenas pra 2 com as funçoes integradas das outras em cada uma; 
+um fato interessante eh que o manual oficial do VisuAlg caiu (ou foi derrubado) bem proximo da data de entrega dos trabalhos, desse jeito eu tive que usar uma snapshot do VisuAlg pra conseguir ler com o site fora do ar;
+outro fato eh que as artes dos projetos nao podem conter aspas duplas ou simples, pois o interpretador se confunde e entende como o fim do argumento para a funçao escreva, desse jeito, consegui achar um site que gera as artes sem essa interferencia https://ascii-generator.site/;
