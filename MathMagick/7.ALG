@@ -1,35 +1,45 @@
-  algoritmo "Verificador de Números Primos e Não Primos"
-  //neste programa iremos localizar se os numeros são primos ou não.
+  algoritmo "Verificador de Números Pares"
+  //neste programa iremos verificar se os números são pares ou não.
   var
-     nprimo1, i: inteiro
-        ehPrimo: inteiro
+     npar1, i: inteiro
+        ehpar: inteiro
   inicio
   escreva("
-┓┏    •┏•    ┓       ┓    ┳┓            ┏┓  •            ┳┓    ┏┓  •        
-┃┃┏┓┏┓┓╋┓┏┏┓┏┫┏┓┏┓  ┏┫┏┓  ┃┃┏┳┓┏┓┏┓┏┓┏  ┃┃┏┓┓┏┳┓┏┓┏  ┏┓  ┃┃┏┓  ┃┃┏┓┓┏┳┓┏┓┏  
-┗┛┗ ┛ ┗┛┗┗┗┻┗┻┗┛┛   ┗┻┗   ┛┗┛┗┗┗ ┛ ┗┛┛  ┣┛┛ ┗┛┗┗┗┛┛  ┗   ┛┗┗┛  ┣┛┛ ┗┛┗┗┗┛┛  
+
+.  .       ._         .          .     .  .                      .__             
+\  / _ ._.*|,* _. _. _| _ ._.   _| _   |\ |. .._ _  _ ._. _  __  [__) _.._. _  __
+ \/ (/,[  || |(_.(_](_](_)[    (_](/,  | \|(_|[ | )(/,[  (_)_)   |   (_][  (/,_) 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
                                                                             
 ")                                                                                                                                                                                       
 
 escreva("Digite um número: ")
-        leia(nprimo1)
+        leia(npar1)
 
-        ehPrimo <- verdadeiro
+        ehpar <- verdadeiro
 
-        se (nprimo1 <= 1) entao
-            escreval(nprimo1, " não é um número primo.")
-        senao
-            para i de 2 ate (nprimo1/2) faca
-                se (nprimo1%i = 0) entao
-                    ehPrimo <- falso
+        se (npar1 <= 1) então
+            escreval(npar1, " não é um número par.")
+        senão
+            para i de 2 ate (npar1/2) faça
+                se (npar1%i = 0) então
+                    ehpar <- falso
                     interrompa
                 fimse
             fimpara
 
-            se (ehPrimo) entao
-                escreval(nprimo1, " é um número primo.")
+            se (ehpar) então
+                escreval(npar1, " é um número par.")
             senao
-                escreval(nprimo1, " não é um número primo.")
+                escreval(npar1, " não é um número par.")
             fimse
         fimse
   fimalgoritmo
