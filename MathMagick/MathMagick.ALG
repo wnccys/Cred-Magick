@@ -1,8 +1,60 @@
-algoritmo "Nome do Programa"
+algoritmo "MathMagick"
 
 var
+  continuar :caractere
 
-teste: caractere
+funcao limpartela () :caractere
+		var
+		inicio
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+  	fimfuncao
 
 inicio
 escreval("                                                                                                                      
@@ -37,29 +89,21 @@ escreval("
                                            :#%%#:                                    
                                             .#*.                                                
 ")
-	escreval("
-               _______                _      _______                _         _     
-              (_______)          _   | |    (_______)              (_)       | |    
-               _  _  _  _____  _| |_ | |__   _  _  _  _____   ____  _   ____ | |  _ 
-              | ||_|| |(____ |(_   _)|  _ \ | ||_|| |(____ | / _  || | / ___)| |_/ )
-              | |   | |/ ___ |  | |_ | | | || |   | |/ ___ |( (_| || |( (___ |  _ ( 
-              |_|   |_|\_____|   \__)|_| |_||_|   |_|\_____| \___ ||_| \____)|_| \_)
-                                                            (_____|                 
-	")
-	escreval("			Esse é o MathMagick, seu assistente matemático!")
+  escreval("                                              .")
+	escreval("			  Esse é o MathMagick, seu assistente matemático!")
 	escreval("
 			
-			+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-			|           Qual função deseja usar?            |
-			+-+-+-+-+ +-+-+-+-+-+-+ +-+-+-+-+-+-+ +-+-+-+-+-+
-			|1|-                                            |                                            
-			+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+                                            
-			|2|-                                            |                                            
-			+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+                                           
-			|3|-                                            |                                            
-			+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+                                            
-			|4|-                                            |                                            
-			+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+                                          
+			+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+			|               Qual função deseja usar?               |
+			+-+-+-+-+ +-+-+-+-+-+-+ +-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-
+			|1|- Resolvedor de equações do 2 grau                  |
+			+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+			|2|- Calcular sequência de Fibonacci                   |
+			+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+			|3|- Verificador de números pares                      |
+			+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+			|4|- Verificar a quantidade de números em um intervalo |
+			+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
 
 	")
 fimalgoritmo
