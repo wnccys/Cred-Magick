@@ -3,6 +3,7 @@ O intúito inicial do projeto era de se usar 9 questoes para fazer alguns algori
 
 ## Xcred
 O Xcred é um banco fictício cujo objetivo é oferecer menores taxas de juros baseado na renda média das pessoas;
+uma coisa legal do desenvolvimento foi o s varios usos da variável opt, que, so com uma variável nós conseguimos escolher entre varias opçoes deixando o codigo bem mais limpo e até mais rápido mesmo q bem pouco;
 
 ## MathMagick
 
