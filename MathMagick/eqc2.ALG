@@ -3,7 +3,7 @@ algoritmo "Calculadora Inteligente de Uma Equação do 2 Grau"
 
 var 
     a, b, c :inteiro
-    continuar()
+    continuar :caractere
 
 inicio
     repita 
@@ -20,7 +20,7 @@ inicio
         
         escreval("O valor que a variável C assumirá é:")
         leia(c)
-        escreval("A estrutura da equação é: "+a+"x^2+"+b+"x+"+c+"=0") 
+        escreval("A estrutura da equação é: "+a+"x^2+"+b+"x+"+c+" = 0") 
         escreval("Calculando...")
     ate(continuar = "n") ou (continuar = "N")
 fimalgoritmo
