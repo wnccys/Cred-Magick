@@ -147,9 +147,9 @@ repita
 				escreval("      O rendimento diário é de: " + (juros*deposito) + " R$.")
 				escreval("      O valor total depois do rendimento diário é de: " + ((juros*deposito)+deposito) + " R$.")
 				escreval("      O rendimento mensal é de: "+ ((juros*deposito)*30+" R$."))
-				escreval("      O valor total depois do rendimento mensal é de: "+ ((juros*deposito)*30)+deposito + " R$.")
+				escreval("      O valor total depois do rendimento mensal é de: "+ ((juros*deposito)*30)+deposito:2:2 + " R$.")
 				escreval("      O rendimento anual é de: " (juros*deposito)*365+" R$.")
-				escreval("      O valor total depois do rendimento anual é de: "+((juros*deposito)*365)+deposito + " R$.")
+				escreval("      O valor total depois do rendimento anual é de: "+((juros*deposito)*365)+deposito:2:2 + " R$.")
 			caso 3
 				limpartela()
 				escreval("      	Bem-vindo ao TeaTro!")
