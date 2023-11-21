@@ -1,11 +1,6 @@
 algoritmo "Menu"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Henrique
-// Descrição   :Um programa que permite o usuário escolher a escolher a opção desejada, receber os dados necessários para executar a operação e mostrar o resultado.
-// Data atual  : 16/11/2023
-
 var
-   opcao:inteiro
+   opt:inteiro
    Nvsalario1:real
    Nvsalario2:real
    Nvsalario3:real
@@ -14,21 +9,20 @@ var
 
 inicio
 repita
-      escreval("-------- Menu --------")
-      escreval("")
-      escreval("1 - Novo Salário")
-      escreval("2 - Férias")
-      escreval("3 - Décimo terceiro")
-      escreval("0 - Sair")
-      escreval("")
-      escreval("-----------------------")
-      escreval("")
-      escreval("Escolha uma opção: ")
-      escreval("")
-
-
-      leia(opcao)
-      escolha opcao
+      escreval("
+            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+      
+            |                Menu                 |
+            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+      
+            |1| |-|  Novo Salário                 |    
+            +-+ +-+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+    
+            |2| |-| Férias                        |                  
+            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+            |3| |-| Décimo terceiro               |
+            +-+ +-+ +-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
+            |0| |-| Sair                          |                      
+            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+")
+      leia(opt)
+      escolha opt
       caso 1
          escreval("Você escolheu Novo Salário")
          escreval(" ")
@@ -66,7 +60,7 @@ repita
             ferias <- (Nvsalario2) + (Nvsalario2)/3
             escreval("O valor das férias do funcionário é de:  R$", ferias:2:2)
              escreval(" ")
-         senao escreval("opção inválida ferias")
+         senao escreval("Opção inválida ferias")
          fimse
          
       caso 3
@@ -86,7 +80,7 @@ repita
       outrocaso
       escreval(" ")
       fimescolha
-      opcao = 0
-   ate opcao = 0
+      opt = 0
+   ate opt = 0
 
 fimalgoritmo
