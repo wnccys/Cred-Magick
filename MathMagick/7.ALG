@@ -1,33 +1,29 @@
-algoritmo "Verificador de Números Primos e Não Primos"
-//neste programa iremos localizar se os numeros são primos ou não.
-var
-nprimo1 : inteiro
-inicio
+   algoritmo "Verificador de Números Pares"
+  //neste programa iremos verificar se os números são pares ou não.
+  var
+    num : inteiro
+    ehpar : logico
+  inicio
+  escreva("
+         .  .       ._         .          .     .  .                      .__             
+         \  / _ ._.*|,* _. _. _| _ ._.   _| _   |\ |. .._ _  _ ._. _  __  [__) _.._. _  __
+          \/ (/,[  || |(_.(_](_](_)[    (_](/,  | \|(_|[ | )(/,[  (_)_)   |   (_][  (/,_) 
+")                                                                                                                                                                                       
 
-escreva("
-╦  ╦┌─┐┬─┐┬┌─┐┬┌─┐┌─┐┌┬┐┌─┐┬─┐  ┌┬┐┌─┐  ╔╗╔┌┬┐┌─┐┬─┐┌─┐┌─┐  ╔═╗┬─┐┬┌┬┐┌─┐┌─┐  ┌─┐  ╔╗╔┌─┐  ╔═╗┬─┐┬┌┬┐┌─┐┌─┐  
-╚╗╔╝├┤ ├┬┘│├┤ ││  ├─┤ │││ │├┬┘   ││├┤   ║║║│││├┤ ├┬┘│ │└─┐  ╠═╝├┬┘│││││ │└─┐  ├┤   ║║║│ │  ╠═╝├┬┘│││││ │└─┐  
- ╚╝ └─┘┴└─┴└  ┴└─┘┴ ┴─┴┘└─┘┴└─  ─┴┘└─┘  ╝╚╝┴ ┴└─┘┴└─└─┘└─┘  ╩  ┴└─┴┴ ┴└─┘└─┘  └─┘  ╝╚╝└─┘  ╩  ┴└─┴┴ ┴└─┘└─┘
-")                                                                                                                                                                                                                        
+	escreva("Digite um número: ")
+	leia(num)
 
-escreval("Digite um número")
+	enquanto (num < 1) faca
+		escreval("O número deve ser maior que 1!")
+		leia(num)
+	fimenquanto
 
-escreva("+-+ +-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+
- |1| |D|i|g|i|t|e| |u|m| |n|�|m|e|r|o|
- +-+ +-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+
- |2| |i|m|p|a|r|                      
- +-+ +-+-+-+-+-+                      
- |3| |p|a|r|                          
- +-+ +-+-+-+")                          
-
-leia(nprimo1)
-
-se (nprimo1%2 = 0) entao
-    escreval ("par")
-senao
-    escreval ("impar")
-fimse
-
-
-
-fimalgoritmo
+	se (num%2 = 0) entao
+		ehpar <- verdadeiro
+	fimse
+	se (ehpar) entao
+		escreval(num, " é um número par.")
+	senão
+		escreval(num, " não é um número par.")
+	fimse
+  fimalgoritmo
