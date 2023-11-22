@@ -220,9 +220,9 @@ escreval("
 		|5|- Sair                                                 |
 		+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 					")
-			repita
-          escreval("Escolha oq deseja calcular: ")
-          leia(opt)
+		repita
+		escreval("Escolha oq deseja calcular: ")
+		leia(opt)
 					escolha(opt)
 					caso 1
 						escreval("Qual o valor da altura?")
