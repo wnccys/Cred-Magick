@@ -3,9 +3,10 @@ var
     nums1, nums2  :real
     area :real
     opt :inteiro
-inicio          repita
-                    escreval("Escolha oq deseja calcular: ")
-                    leia(opt)
+inicio          
+          repita
+          escreval("Escolha oq deseja calcular: ")
+          leia(opt)
 					escolha(opt)
 					caso 1
 						escreval("Qual o valor da altura?")
