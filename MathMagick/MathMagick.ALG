@@ -4,7 +4,7 @@ var
   	continuar :caractere
   	opt, a, b, c, num, ant, next, limit :inteiro
 	ehpar :logico
-	nums :vetor[0..2] de inteiro
+	nums1,nums2, area :real
 
 	funcao calculaRaizes (a, b, c :inteiro) :caractere
     var 
@@ -225,10 +225,10 @@ escreval("
 					escolha(opt)
 					caso 1
 						escreval("Qual o valor da altura?")
-						leia(nums[0])
+						leia(nums1)
 						escreval("Qual o valor do lado?")
-						leia(nums[1])
-						area <- (nums[0]*nums[1]/2)
+						leia(nums2)
+						area <- ((nums1*nums2)/2)
 						escreval("
                                                    =*                             
                                                   +@@#.                           
@@ -257,37 +257,37 @@ escreval("
 						escreval(" A área é: "+area)
 					caso 2
 						escreval("Qual o valor do lado?")
-						leia(nums[0])
-						area <- (nums[0]^2)
+						leia(nums1)
+						area <- (nums1^2)
 						escreval("
-                          -------------------------------------------:                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .=                                          #                          
-                         .+                                          #                          
-                          ::::::::::::::::::::::::::::::::::::::::::::                          
+								 -------------------------------------------:                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.=                                          #                          
+								.+                                          #                          
+								 ::::::::::::::::::::::::::::::::::::::::::::                          
 						")
 						escreval("")
 						escreval("A área é: "+ area)
 					caso 3
 						escreval("Qual o valor do lado maior?")
-						leia(nums[0])
+						leia(nums1)
 						escreval("Qual o valor do lado menor?")
-						leia(nums[1])
-						area <- (nums[0]*nums[1])/2
+						leia(nums2)
+						area <- ((nums1*nums2)/2)
 						escreval("
                                       ..................................                             
                                       +================================+=                            
@@ -311,8 +311,8 @@ escreval("
 						escreval("A área é: "+ area)
 					caso 4
 						escreval("Qual o valor do lado?")
-						leia(nums[0])
-						area <- (3*raizq(3)*(nums[0]^2))/2)
+						leia(nums1)
+						area <- ((3*raizq(3)*(nums1^2))/2)
 						limpartela()
 						escreval("
                                                       ..                             
@@ -348,12 +348,6 @@ escreval("
 
 						")
 						escreval("A área do Pentágono é: "+area)
-					caso 5
-						escreval("")
-					outrocaso
-						escreval("Opção inválida")
-					fimescolha
-				
 				caso 5
 					escreval(" ")
 				outrocaso
