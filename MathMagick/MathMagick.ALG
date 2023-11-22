@@ -180,32 +180,32 @@ escreval("
 						leia(continuar)
     				ate (continuar = "n") ou (continuar = "N")
 				caso 3
-					escreval("
-                   .  .       ._         .          .     .  .                      .__             
-                   \  / _ ._.*|,* _. _. _| _ ._.   _| _   |\ |. .._ _  _ ._. _  __  [__) _.._. _  __
-                    \/ (/,[  || |(_.(_](_](_)[    (_](/,  | \|(_|[ | )(/,[  (_)_)   |   (_][  (/,_) 
+						escreval("
+						.  .       ._         .          .     .  .                      .__             
+						\  / _ ._.*|,* _. _. _| _ ._.   _| _   |\ |. .._ _  _ ._. _  __  [__) _.._. _  __
+						 \/ (/,[  || |(_.(_](_](_)[    (_](/,  | \|(_|[ | )(/,[  (_)_)   |   (_][  (/,_) 
 
 
-					")                                                                                                                                                                                       
-
-					escreval("		Digite um número: ")
-					leia(num)
-
-					enquanto (num < 1) faca
-						escreval("		O número deve ser maior que 1!")
+						")                                                                                                                                                                                       
+						escreval("		Digite um número: ")
 						leia(num)
-					fimenquanto
 
-					se (num%2 = 0) entao
-						ehpar <- verdadeiro
-					fimse
-					se (ehpar) entao
-						escreval("		"+num+" é um número par.")
-					senao
-						escreval("		"+num+" não é um número par.")
-					fimse
+						enquanto (num < 1) faca
+							escreval("		O número deve ser maior que 1!")
+							leia(num)
+						fimenquanto
+
+						se (num%2 = 0) entao
+							ehpar <- verdadeiro
+						fimse
+						se (ehpar) entao
+							escreval("		"+num+" é um número par.")
+						senao
+							escreval("		"+num+" não é um número par.")
+						fimse
 				caso 4
-				limpatela()
+				repita
+				limpartela()
 					escreval("
 		+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 		|                Qual área você deseja?                   |
@@ -224,9 +224,9 @@ escreval("
 					leia(opt)
 					escolha(opt)
 					caso 1
-						escreval("Qual o valor da altura?")
+						escreval("		Qual o valor da altura?")
 						leia(nums1)
-						escreval("Qual o valor do lado?")
+						escreval("		Qual o valor do lado?")
 						leia(nums2)
 						area <- ((nums1*nums2)/2)
 						escreval("
@@ -254,9 +254,9 @@ escreval("
                            *@@++++++++++++++++++++++++++++++++++++++++++++%@%.    
                           -+++++++++++++++++++++++++++++++++++++++++++++++++++-   
 						")
-						escreval(" A área é: "+area)
+						escreval("		A área é: "+area)
 					caso 2
-						escreval("Qual o valor do lado?")
+						escreval("		Qual o valor do lado?")
 						leia(nums1)
 						area <- (nums1^2)
 						escreval("
@@ -281,11 +281,11 @@ escreval("
 								 ::::::::::::::::::::::::::::::::::::::::::::                          
 						")
 						escreval("")
-						escreval("A área é: "+ area)
+						escreval("		A área é: "+ area)
 					caso 3
-						escreval("Qual o valor do lado maior?")
+						escreval("		Qual o valor do lado maior?")
 						leia(nums1)
-						escreval("Qual o valor do lado menor?")
+						escreval("		Qual o valor do lado menor?")
 						leia(nums2)
 						area <- ((nums1*nums2)/2)
 						escreval("
@@ -310,7 +310,7 @@ escreval("
 						")
 						escreval("A área é: "+ area)
 					caso 4
-						escreval("Qual o valor do lado?")
+						escreval("		Qual o valor do lado?")
 						leia(nums1)
 						area <- ((3*raizq(3)*(nums1^2))/2)
 						limpartela()
@@ -347,14 +347,15 @@ escreval("
                                     .------------------------------------:           
 
 						")
-						escreval("A área do Pentágono é: "+area)
+						escreval("		A área do Pentágono é: "+area)
 				caso 5
 					escreval(" ")
 				outrocaso
 					escreval("		Opção Inválida")
 				fimescolha
-			escreval("		Deseja usar outra ferramenta? [S/N]")
-			leia(continuar)
+		ate(opt = 5)
+	escreval("		Deseja usar outra ferramenta? [S/N]")
+	leia(continuar)
 	ate (continuar = "n") ou (continuar = "N")
 	limpartela()
 	escreval("Saindo...")
