@@ -204,6 +204,7 @@ escreval("
 							escreval("		"+num+" não é um número par.")
 						fimse
 				caso 4
+				repita
 				limpartela()
 					escreval("
 		+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -220,7 +221,6 @@ escreval("
 		|5|- Sair                                                 |
 		+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 					")
-		repita
 		escreval("Escolha oq deseja calcular: ")
 		leia(opt)
 					escolha(opt)
@@ -355,9 +355,9 @@ escreval("
 						escreval("Opção inválida")
 					fimescolha
         ate(opt = 5)
+		fimescolha
 		escreval("		Deseja usar outra ferramenta? [S/N]")
 		leia(continuar)
-		fimescolha
 	ate (continuar = "n") ou (continuar = "N")
 	limpartela()
 	escreval("Saindo...")
