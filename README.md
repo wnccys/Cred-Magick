@@ -6,7 +6,7 @@ O Xcred é um banco fictício cujo objetivo é oferecer menores taxas de juros b
 uma coisa legal do desenvolvimento foi o s varios usos da variável opt, que, so com uma variável nós conseguimos escolher entre varias opçoes deixando o codigo bem mais limpo e até mais rápido mesmo q bem pouco;
 
 ## MathMagick
-
+MathMagick eh feito pra ser um assistente matemático, a melhor parte do projto na minha opiniao foi o resolver de equaçoes do 2 grau e o algoritmo de fibonacci tava tudo muito bom quando faltando poucos minutos pra apresentaçao apareceu um erro fatal no projeto que ninguem conseguia achar; ATE QUE enontrmos um fimenquanto deppois de proucurar mt; MT FODAISSO
 # Os Projetos
 pra organizar o projeto preferi pelo Trello, que deixa facilmente compartilharmos ideias, executar oq precisa, ter uma ideia do ponto em que estamos no projeto e etc... usamos tb o Github q deu pra gente MUITA agilidade, além de ser uma ferramenta de desenvolvimento essencial nos dias de hoje no ambito de desenvolvimento; outra coisa bem interessante foi o uso do Visual Studio Code em conjunto com a extenção Design Líquido que tambem foi uma mão na roda por permitir o uso do VSCode para interpretar código do VisuAlg com suporte a tudo de bom que a IDE oferece, inclusive com snippets e highlight;
 
